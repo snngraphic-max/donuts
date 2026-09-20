@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gallery</title>
+    <link rel="icon" href="sunnyicon.png">
+
+    <style>
+
+        *{
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #FFF9F2;
+        }
+
+        .gallery .head h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            text-align: center;
+            color: #4A2525;
+        }
+
+        .gallery .head p{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 30px;
+            color: #4A2525;
+            margin-top: -30px;
+        }
+
+        .gallery .head button{
+            background-color: #4A2525;
+            padding: 10px;
+            width: 150px;
+            border-collapse: collapse;
+            margin-left: 500px;
+            margin-top: -40px;
+            transition: 0.9s;
+        }
+
+        .gallery .head button a{
+            text-decoration:none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .head button:hover{
+            background-color: #985959;
+            box-shadow: 0 1px 3px#985959;
+        }
+
+
+        .gallery .home a{
+            text-decoration:none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #4A2525;
+            font-weight: bold;
+            font-size: 17px;
+            background: #FFF9F2;
+            padding: 15px;
+            max-width: 150px;
+            margin-left: 680px;
+            transition: 0.9s;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery .home a:hover{
+            background-color: #c8b8a5;
+            box-shadow: 0 1px 3px#985959;
+        }
+
+         .gallery button a:hover{
+            color: white;
+        }
+
+        .card .img{
+            display: inline-block;
+            margin: 20px;
+            margin-left: 50px;
+            margin-top: 100px;
+            transition: 0.9s ease;
+        }
+
+        .card p{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 34px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .card img:hover{
+            transform:scale(1.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card .img small{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 21px;
+            margin-left: 140px;
+           
+        }
+
+        .footer{
+            text-align: center;
+            font-size: 21px;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            background-color: #4A2525;
+            color: #FFF9F2;
+        }
+
+        @media (max-width: 700px) {
+           .gallery .head h1{
+                margin-top: 20px;
+                max-width: 100%;
+                font-size: 55px;
+               margin-left: 100px;
+            }
+
+            .gallery .head p{
+                margin-top: -50px;
+                max-width: 100%;
+                font-size: 35px;
+                margin-left: 100px;
+            }
+
+            .gallery .head button{
+                margin-left: 180px;
+                margin-top: -50px;
+            }
+
+             .gallery .home a{
+                margin-left: 350px;
+                margin-top: -100px;
+            }
+
+            .card .img img {
+                width: 250px;
+                height: 250px;
+                max-width: 90%;
+                object-fit: cover;
+            }
+
+            .gallery .img p{
+                font-size: 20px;
+                text-align: center;
+            }
+
+             .gallery .img small {
+                font-size: 20px;
+                margin-left: 100px;
+            }
+
+            .footer {
+                font-size: 17px;
+                margin-top: 20px;
+                max-width: 100%;
+             }
+
+
+        }
+    </style>
+</head>
+<body>
+    <section class="gallery">
+        <div class="head">
+            <h1>SUNNY DONUTS</h1>
+            <P>Fresh,Sweet & delicious</P>
+            <button><a href="order.html"> Order Now </a></button>
+        </div>
+        <div class="home">
+            <a href="donut.html"> Home </a>
+        </div>
+        
+        <section class="card">
+            <div class="img">
+                <img src="glazed.jpg" alt="Glazed Donut" width="330px" height="330px">
+                 <p> Glazed </p> 
+                 <small> $50</small>
+            </div>
+
+            <div class="img">
+                <img src="chocolate 2.jpg" alt="Chocolate Donut" width="330px" height="330px">
+                <p> Chocolate </p> 
+                <small> $20</small>
+            </div>
+
+            <div class="img">
+                <img src="strawberry.jpg" alt="Strawberry Donut" width=330px" height="330px">
+                <p> Strawberry </p>
+                <small> $10</small> 
+            </div>
+
+            <div class="img">
+                <img src="oreo.jpg" alt="Oreo Donut" width="330px" height="320px">
+                <p> Strawberry </p>
+                <small> $70</small> 
+            </div>
+
+            <div class="img">
+                <img src="blueberry.jpg" alt="blueberry Donut" width="330px" height="320px">
+                <p> Blueberry </p>
+                <small> $30</small> 
+            </div>
+
+            <div class="img">
+                <img src="boston cream.jpg" alt="bostom cream Donut" width="330px" height="320px">
+                <p> Bostom cream </p>
+                <small> $25</small> 
+            </div>
+
+            <div class="img">
+                <img src="caramel.jpg" alt="caramel Donut" width="330px" height="320px">
+                <p> Caramel </p> 
+                <small> $15</small>
+            </div>
+
+            <div class="img">
+                <img src="special donuts.jpg" alt="special Donut" width="330px" height="320px">
+                <p> Special Donut </p>
+                <small> $100</small> 
+            </div>
+
+            <div class="img">
+                <img src="4.jpg" alt="chocolate with sugar/cream Donut" width="330px" height="320px">
+                <p> Chocolate with <br> sugar/cream Donut</p>
+                <small> $80</small> 
+            </div>
+        </section>
+    </section>
+
+    <div class="footer">
+        <small> © 2026 Sunny Donuts. Made with Love</small>
+    </div>
+    
+</body>
+</html>

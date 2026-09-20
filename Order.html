@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="icon" type="image/png" href="sunnyicon.png">
+
+    <style>
+
+        .form{
+            max-width: 600px;
+            margin: 60px;
+            padding: 60px;
+            background: #ffffff;
+            border-radius: 15px;
+            height: auto;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+         body{
+            background-color: #FFF9F2;
+        }
+
+        .head h2 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            margin-top: 10px;
+        }
+
+        .head h4 {
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            margin-top: -35px;
+        }
+
+        .head p{
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 17px;
+            margin-top: -50px;
+        }
+
+        .head h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        .head h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 50px;
+            margin-top: -50px;
+            color: #4A2525;
+        }
+
+        .head h6{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            text-align: center;
+            font-weight: normal;
+            margin-top: -30px;
+        }
+
+        .form label{
+            display: block;
+            margin: 15px 0 7px;
+            font-weight: 600;
+        }
+
+        .form input,
+        .form select,
+        .form textarea{
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .form textarea{
+            height: 100%;
+            resize:  vertical;
+        }
+
+        .form button{
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 25px;
+            background: #4A2525;
+            color: white;
+            font-size: 16PX;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form button:hover{
+                background: #7A3E3E;
+                transform: translateY(-2px);
+        }
+
+        .form{
+            margin-left: 260px;
+        }
+
+        .footer{
+            text-align: center;
+            margin-top: -30px;
+            font-size: 30px;
+        }
+              .nav{
+            background-color: black;
+            margin-top: 40px;
+        }
+
+        .nav ul{
+            display: flex;
+            list-style-type: none;
+            margin-left: 400px;
+        }
+
+        .nav ul li{
+            margin: 30px;
+            
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            transition: 0.9s;
+            font-weight:bold;
+            color:white;
+            padding: 20px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .nav ul li a:hover{
+            color:pink;
+            padding: 10px;
+            border-color:white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+       
+
+        @media(max-width: 700px) {
+            .nav {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .nav ul {
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+        gap: 5px;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 0;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav ul li a {
+        padding: 10px;
+        font-size: 16px;
+    } 
+    
+    .form{
+        margin-left: 50px;
+        margin-right: -500px;
+        max-width: 70%;
+    }
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="order"> 
+         <div class="nav"> 
+            <ul>
+                <li> <a href="donut.html"> Home </a></li>
+                <li> <a href="gallery.html"> Gallery</a></li>
+                <li> <a href="donut.html"> Contact</a></li>
+            </ul>
+        </div>
+        <div class="head">
+            <h2> Sunny</h2>
+            <h4> Donuts</h4>
+            <p> Fresh, Sweet, Delicious</p>
+
+            <h3> Place Your</h3>
+            <h1> Order</h1>
+            <h6> Fill in the details below and we'll get your <br> delicious donuts ready as soon as possible.</h6>
+        </div>
+
+        <div class="form">
+            <form>
+                <label for="name"> Full Name</label><br>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                 <br>
+                <label for="donut"> Choose Donuts</label> <br>
+                <select id="donut" required>
+                    <option value=""> select a donut</option>
+                    <option> Strawberry Donut</option>
+                    <option> Chocolate Donut</option>
+                    <option> Sprinkles Donut</option>
+                    <option> Glazed Donut</option>
+                    <option> Blueberrt Donut</option>
+                    <option> Bostom Cream</option>
+                    <option> Caramel Donut</option>
+                    <option> Special Donut</option>
+                </select>
+
+                <br>
+                <label for="quantity"> Quantity</label><br>
+                <input type="number" id="quantity" placeholder="How many" required>
+
+                 <br>
+                <label for="address"> Delivery Address</label><br>
+                <textarea type="address" placeholder="Enter your Delivery address" required></textarea>
+
+                <br> 
+                <button type="submit"> Place Order</button>
+            </form>
+        </div>
+
+        <div class="footer">
+             <small>© 2026 Sunny Donuts. All Rights Reserved </small>
+        </div>
+    </section>
+    
+</body>
+</html>
